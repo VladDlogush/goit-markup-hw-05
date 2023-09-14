@@ -451,13 +451,13 @@ textarea:focus-visible {
 }
 
 /* Checked state */
-input[type="checkbox"]:checked + .modal-form-checkbox {
+input[type="checkbox"]:checked + .modal-form-agreement > .modal-form-checkbox {
   border-color: transparent;
   background-color: var(--active-bg-color);
 }
 
 /* Focus state */
-input[type="checkbox"]:focus-visible + .modal-form-checkbox {
+input[type="checkbox"]:focus-visible + .modal-form-agreement > .modal-form-checkbox {
   border-color: var(--active-bg-color);
 }
 
@@ -471,19 +471,12 @@ input[type="checkbox"]:focus-visible + .modal-form-checkbox {
 }
 
 input[type="checkbox"]:checked
-  + .modal-form-checkbox
+  + .modal-form-agreement
+  > .modal-form-checkbox
   > .modal-form-checkbox-icon {
   opacity: 1;
   transform: scale(1);
 }
-
-/* .modal-form-agreement-desc {
-  color: var(--light-slate-color);
-  font-size: 12px;
-  font-weight: 400;
-  line-height: 1.6;
-  letter-spacing: 0.03em;
-} */
 
 .modal-form-agreement-link {
   color: var(--primary-brand-color);
