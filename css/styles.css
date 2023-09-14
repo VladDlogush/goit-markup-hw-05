@@ -283,7 +283,7 @@ textarea:focus-visible {
 
   width: 408px;
   min-height: 584px;
-  padding: 24px;
+  padding: 72px 24px 24px 24px;
 
   border-radius: 4px;
   background-color: var(--modal-bg-color);
@@ -338,8 +338,11 @@ textarea:focus-visible {
   font-weight: 500;
   line-height: 1.5;
   letter-spacing: 0.02em;
-  margin-top: 48px;
   margin-bottom: 16px;
+}
+
+.modal-field {
+  margin-bottom: 8px;
 }
 
 .modal-form-label {
@@ -354,7 +357,6 @@ textarea:focus-visible {
 
 .modal-form-field {
   position: relative;
-  margin-bottom: 8px;
 }
 
 .modal-form-input {
@@ -451,7 +453,8 @@ input[type="checkbox"]:focus-visible + .modal-form-checkbox {
   fill: var(--cloud-color);
   opacity: 0;
   transform: scale(0.2);
-  transition: fill var(--trns-fast), opacity var(--trns-fast),
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
     transform cubic-bezier(0.68, -0.55, 0.27, 1.55) 300ms;
 }
 
@@ -751,8 +754,8 @@ input[type="checkbox"]:checked
   padding: 7px 16px;
   color: var(--white-color);
   font-size: 12px;
-  line-height: 2;
-  letter-spacing: 0.03em;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
   background-color: transparent;
 
   border-radius: 4px;
@@ -772,8 +775,8 @@ input[type="checkbox"]:checked
   padding: 8px 24px;
   justify-content: center;
   align-items: center;
-  gap: 16px;
 
+  min-width: 165px;
   color: var(--white-color);
   text-align: center;
   line-height: 1.5;
@@ -794,6 +797,7 @@ input[type="checkbox"]:checked
 
 .subscribe-form-icon {
   fill: var(--white-color);
+  margin-left: 16px;
 }
 
 .social-media-title {
